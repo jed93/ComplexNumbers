@@ -16,3 +16,9 @@ C:\Users\AfzaalAhmad\Documents\Visual Studio 2013\Projects\ComplexNumbers_CSharp
 \\Mac\Home\Desktop\ComplexNumbers_CSharp\ComplexNumbers_CSharp\obj\Debug\ComplexNumbers_CSharp.csprojResolveAssemblyReference.cache
 \\Mac\Home\Desktop\ComplexNumbers_CSharp\ComplexNumbers_CSharp\obj\Debug\ComplexNumbers_CSharp.exe
 \\Mac\Home\Desktop\ComplexNumbers_CSharp\ComplexNumbers_CSharp\obj\Debug\ComplexNumbers_CSharp.pdb
+\\Mac\Home\.Trash\Repositories\ComplexNumbers\ComplexNumbers_CSharp\bin\Debug\ComplexNumbers_CSharp.exe.config
+\\Mac\Home\.Trash\Repositories\ComplexNumbers\ComplexNumbers_CSharp\bin\Debug\ComplexNumbers_CSharp.exe
+\\Mac\Home\.Trash\Repositories\ComplexNumbers\ComplexNumbers_CSharp\bin\Debug\ComplexNumbers_CSharp.pdb
+\\Mac\Home\.Trash\Repositories\ComplexNumbers\ComplexNumbers_CSharp\obj\Debug\ComplexNumbers_CSharp.csprojResolveAssemblyReference.cache
+\\Mac\Home\.Trash\Repositories\ComplexNumbers\ComplexNumbers_CSharp\obj\Debug\ComplexNumbers_CSharp.exe
+\\Mac\Home\.Trash\Repositories\ComplexNumbers\ComplexNumbers_CSharp\obj\Debug\ComplexNumbers_CSharp.pdb

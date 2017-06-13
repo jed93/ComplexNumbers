@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ComplexNumbers_CSharp
 {
@@ -12,22 +8,31 @@ namespace ComplexNumbers_CSharp
         private double _real;
         private double _imaginary;
 
-        // Get and set methods
-        public double GetReal()
+        // Properties of the class
+        public double Real
         {
-            return _real;
+            get { return _real; }
+            set { _real = value; }
         }
-        public void SetReal(double real)
+
+        public double Imaginary
         {
-            _real = real;
+            get { return _imaginary; }
+            set { _imaginary = value; }
         }
-        public double GetImaginary()
+
+        // Method overriding
+        public override bool Equals(object obj)
         {
-            return _imaginary;
+            var item = obj as ComplexNumber;
+
+            // Check whether their values are same
+            return this._real == item._real && this._imaginary == item._imaginary;
         }
-        public void SetImaginary(double imaginary)
+
+        public override string ToString()
         {
-            _imaginary = imaginary;
+            return String.Format("{0} + {1}i", this._real, this._imaginary);
         }
 
         // Operator overloading
@@ -40,20 +45,19 @@ namespace ComplexNumbers_CSharp
         {
             return new ComplexNumber()
             {
-                _real = (a._real * b._real) - (a._imaginary * b._imaginary),
-                _imaginary = (a._real * b._imaginary) + (a._imaginary * b._real)
+                _real = a._real * b._real - a._imaginary * b._imaginary,
+                _imaginary = a._real * b._imaginary + a._imaginary * b._real
             };
         }
 
         public static bool operator ==(ComplexNumber a, ComplexNumber b)
         {
-            // Check whether their values are same
-            return (b._real == a._real && b._imaginary == a._imaginary);
+            return a.Equals(b);
         }
 
         public static bool operator !=(ComplexNumber a, ComplexNumber b)
         {
-            return !(b._real == a._real && b._imaginary == a._imaginary);
+            return !a.Equals(b);
         }
 
         // Constructors
@@ -73,12 +77,12 @@ namespace ComplexNumbers_CSharp
         // Cast operators
         public static implicit operator double(ComplexNumber complexNumber)
         {
-            return Math.Sqrt(Math.Pow(complexNumber.GetReal(), 2) + Math.Pow(complexNumber.GetImaginary(), 2));
+            return Math.Sqrt(Math.Pow(complexNumber._real, 2) + Math.Pow(complexNumber._imaginary, 2));
         }
 
         public static implicit operator string(ComplexNumber complexNumber)
         {
-            return (System.String.Format("{0} + {1}i", complexNumber.GetReal(), complexNumber.GetImaginary()));
+            return complexNumber.ToString();
         }
     }
 }

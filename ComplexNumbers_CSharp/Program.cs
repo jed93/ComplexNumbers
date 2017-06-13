@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ComplexNumbers_CSharp
 {
@@ -10,8 +6,10 @@ namespace ComplexNumbers_CSharp
     {
         static void Main(string[] args)
         {
-            ComplexNumber number = new ComplexNumber(2, 10);
-            Console.WriteLine((string)number);
+            ComplexNumber numberOne = new ComplexNumber(2, 10);
+            ComplexNumber numberTwo = new ComplexNumber(2, 6);
+            Console.WriteLine((string)numberOne);
+            Console.WriteLine(numberOne == numberTwo);
             //Console.WriteLine(number.ToString(false));
 
             Console.Read();
